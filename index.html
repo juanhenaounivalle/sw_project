@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geoportal Desnutrición Cali</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-animado">
+            <a href="https://storymaps.arcgis.com/stories/6fa23b28be454215b2d59cddeda9986b" target="_blank">
+                Entre Calles y Sueños: La Desnutrición Infantil Aguda en el Mapa de Santiago de Cali
+            </a>
+        </h1>
+    </header>
+
+    <section class="banner">
+        <img src="img/banner.jpg" />
+    </section>
+
+    <nav class="main-nav">
+        <!-- Botón solo para móviles -->
+        <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
+
+        <ul id="menu" class="menu-cerrado">
+            <li><a href="index.html">Home 👻</a></li>
+            <li><a href="#geovisor">Geovisor</a></li>
+            <li><a href="#tableros">Tableros de control</a></li>
+            <li><a href="#prevencion">Prevención y Nutrición</a></li>
+            <li><a href="#glosario">Glosario</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#analisis">Análisis cartográfico</a></li>
+        </ul>
+    </nav>
+
+    <section class="relleno">
+        <div class="contenido">
+            <h2>Relleno</h2>
+            <p>Esto es un relleno para poder scrollear y ver completamente el pie de página. Aquí se podrá colocar
+                contenido relevante más adelante.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                ¡La desnutrición no es solo una cifra, es un llamado a la acción para proteger el futuro de las
+                siguientes generaciones!
+            </p>
+            <img src="img/logo.png" alt="Universidad del Valle" class="footer-logo" />
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('menu-abierto');
+            menu.classList.toggle('menu-cerrado');
+        });
+    </script>
+
+</body>
+
+</html>
